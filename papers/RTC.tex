@@ -1,0 +1,125 @@
+\documentclass[11pt]{article} % Default font size is 12pt, it can be changed
+% here \documentclass[12pt]{book} % Default font size is 12pt, it can be changed here
+%\documentclass{tufte-handout}
+%\documentclass[10pt]{report} %{scrartcl} %amsart} % article Default font size
+
+%\usepackage[cm]{fullpage}
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US
+% Letter
+
+%\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage{amsmath,mathtools}%\usepackage[utf8]{inputenc} 
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amssymb}
+\usepackage{listings}
+
+%\usepackage{natbib}
+
+\usepackage{longtable}
+%\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+%\graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{../../Sweave}
+\usepackage{subfigure}
+%\usepackage[utf8]{inputenc}
+%\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float} 
+\usepackage{attrib} 
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{shapes,backgrounds}
+\usetikzlibrary{arrows,positioning}
+\usetikzlibrary{trees}
+%\usepackage{signalflowdiagram}
+\usepackage{schemabloc}
+
+\definecolor{mydarkblue}{HTML}{0066CC}
+\definecolor{mydarkred}{HTML}{990000}
+\definecolor{mydarkgreen}{HTML}{006600}
+\definecolor{myblue}{HTML}{336699}
+
+
+\tikzstyle{normalnode}=[draw,%
+                          rectangle,%
+                          shade,%
+                          minimum size  = 1.0cm,%
+                          node distance = 1.3cm]
+ \tikzstyle{normalnode2}=[draw,%
+                          rectangle,%
+                          shade,%
+                          minimum size  = 1.0cm,%
+                          node distance = 1.0cm]
+  \tikzstyle{normalnode3}=[draw,%
+                          rectangle,%
+                          shade,%
+                          minimum size  = 1.0cm,%
+                          node distance = 5.0cm]
+  \tikzstyle{normal}=[draw,fill=myblue,rectangle, minimum size=1.0cm,node
+  distance=2cm, text=white] 
+  \tikzstyle{start}=[draw,fill=green!70,rectangle, minimum size=1.0cm,node distance=1.3cm]                        
+  \tikzstyle{goal}=[draw,fill=red!70,rectangle, minimum size=1.0cm,node distance=1.3cm]
+  \tikzstyle{goal2}=[draw,fill=red!70,rectangle, minimum size=1.0cm,node distance=1.0cm]
+  \tikzstyle{agent}=[draw,fill=blue!70,circle,minimum size=0.6cm]
+  \tikzstyle{dummy}=[circle]
+
+
+
+
+\title{Real-Time Computing: An Overview}
+
+\author{Shane Conway}
+
+\date{\today}\\ %\dateline{June 10, 2012}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+I review the current state of real-time computing frameworks.
+\end{abstract}
+
+\newpage
+
+
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage
+
+\section{Introduction}
+
+
+\section{Messaging Systems}
+
+
+\section{Summary}
+
+There are many existing open-source options for real-time computing.
+
+\begin{thebibliography}{1} % Bibliography - this is intentionally simple in this template
+
+\bibitem{Tesauro1995} Gerald Tesauro {\sl "Temporal Difference
+Learning and TD-Gammon".} Communications of the ACM 38 (3). (March 1995)
+
+\end{thebibliography}
+
+%\bibliographystyle{plain}
+%\bibliography{DynamicTrading}
+
+\end{document}
+
